@@ -1,0 +1,524 @@
+.form-control-dark {
+  border-color: var(--bs-gray);
+}
+
+.form-control-dark:focus {
+  border-color: #fff;
+  box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+}
+
+.text-small {
+  font-size: 85%;
+}
+
+/*configuracion interfaz principal*/
+.container, .container-sm {
+   max-width: 100%;
+}
+
+:root {
+  --bs-emphasis-color-rgb: 255, 255, 255; /* Cambia estos valores según tus preferencias de color */
+  --bs-link-opacity: 1; /* Cambia este valor según tus preferencias de opacidad */
+  --bs-link-underline-opacity: 1; /* Cambia este valor según tus preferencias de opacidad */
+  --bs-secondary-rgb: 255,255,255;
+}
+
+.link-body-emphasis {
+  color: RGBA(var(--bs-emphasis-color-rgb), var(--bs-link-opacity, 1)) !important;
+  -webkit-text-decoration-color: RGBA(var(--bs-emphasis-color-rgb), var(--bs-link-underline-opacity, 1)) !important;
+  text-decoration-color: RGBA(var(--bs-emphasis-color-rgb), var(--bs-link-underline-opacity, 1)) !important;
+}
+
+.link-body-emphasis2 {
+  padding-bottom: 1.2em;
+}
+
+.text-secondary {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-secondary-rgb),var(--bs-text-opacity))!important;
+}
+
+
+.principal{
+  background-color: #000;
+}
+
+.py-3 {
+  padding-top: 0rem!important;
+  padding-bottom: 0rem!important; 
+}
+
+
+.dropdown-toggle:not(:focus) {
+  outline: 0;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.b-example-divider {
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.btn-bd-primary {
+  --bd-violet-bg: #712cf9;
+  --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: var(--bd-violet-bg);
+  --bs-btn-border-color: var(--bd-violet-bg);
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg: #6528e0;
+  --bs-btn-hover-border-color: #6528e0;
+  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #5a23c8;
+  --bs-btn-active-border-color: #5a23c8;
+}
+
+.bd-mode-toggle {
+  z-index: 1500;
+}
+
+.bd-mode-toggle .dropdown-menu .active .bi {
+  display: block !important;
+}
+
+
+
+/* Estilo personalizado para el encabezado fijo */
+.fixed-header {
+
+  background-color: #ffffff;
+  /* Cambia el color de fondo según tus preferencias */
+  z-index: 1000;
+  /* Asegura que el encabezado esté por encima de otros elementos */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Agrega una sombra sutile en el encabezado */
+}
+
+.custom-navbar {
+  
+  height: 45px;
+  /* Ajusta la altura del navbar según tus preferencias */
+  padding: 0.5rem 0;
+  /* Ajusta el padding superior e inferior según tus preferencias */
+}
+
+.navbar-text {
+  display: flex;
+  align-items: center;
+  /* Centra verticalmente el contenido */
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-10px);
+  }
+
+  50% {
+    transform: translateX(10px);
+  }
+
+  75% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(10);
+  }
+}
+
+.shake-text {
+  animation: shake 5s infinite;
+  /* Cambia la duración y repetición según tus preferencias */
+}
+
+.nav-item:hover .nav-link {
+  
+  text-decoration-color: black;
+  font-weight: bold;
+  /* Negrita */
+  padding-bottom: 6px;
+ 
+}
+.nav-link{
+  font-size: 20px;
+  padding-top: 25px;
+}
+
+.text-secondary{
+  padding-top: -15px;
+}
+
+.nav-link i {
+  font-size: 30px; /* Cambia el tamaño de los íconos según tus preferencias */
+}
+
+
+
+
+/*-------------------------------------*/
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 39.2rem;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+/* rtl:end:ignore */
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+/* rtl:begin:remove */
+.featurette-heading {
+  letter-spacing: -.05rem;
+}
+
+/* rtl:end:remove */
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+
+/* Quitar color azul y subrayado, y aplicar efecto de opacidad en hover */
+a {
+  text-decoration: none; /* Quitar subrayado */
+  color: inherit; /* Heredar color del texto del padre (negro por defecto) */
+  transition: opacity 0.3s ease; /* Efecto de transición en hover */
+  /*font-size: 14px !important;*/
+}
+
+/* Cambiar opacidad al pasar el mouse por encima del enlace */
+a:hover {
+  opacity: 0.7; /* Cambiar a la opacidad deseada */
+}
+
+.sale-text {
+  color: red; /* Cambia el color a rojo */
+  font-size: 12px;
+  font-weight: bold;
+  position: relative;
+  top: -18px; /* Ajusta la posición vertical según sea necesario */
+  left: -30px; /* Ajusta la posición horizontal según sea necesario */
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.modal-header{
+  color:#227C99;
+}
+.material-symbols-outlined{
+  font-size: 25px;
+  margin-top: 7px;
+  padding-right: 0.2em;
+}
+
+#get_into{
+  text-align: center;
+  margin-left: 175px;
+}
+
+#No_pass{
+  text-decoration: none;
+  color:#095DA4;
+  font-size: 13.5px;
+}
+
+#No_pass .material-symbols-outlined{
+    position: relative;
+    top:5.7px;
+}
+.social_media{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.social_media .icon_Chrome{
+  margin-left: 78px;
+}
+
+.social_media .icon_FB{
+  margin-left: 50px;
+}
+
+.user,.lock{
+  position: relative;
+  font-size: 40px;
+  bottom: 17.4px;
+  left: 22px;
+}
+
+/*Vista de oferta*/
+
+.titleOfert{
+  text-align: center;
+}
+.titleOfert a{
+  color: #712cf9;
+  text-decoration-line: underline;
+}
+
+.active{
+  font-weight: bold;
+}
+
+
+.content{
+  width: 85%;
+  margin:auto;
+}
+.content .row-cols-md-4{
+  margin-top: 2em;
+}
+
+.price{
+  display: flex; 
+  margin-left: 10px;
+}
+.sale{
+  position: absolute;
+  background-color: red;
+  color: #fff;
+  z-index: 100px;
+  border-radius: 3.5px;
+  width: 70px;
+  top: 15px;
+  left: 13px;
+  font-weight: bold;
+}
+.price .one{
+  margin-left: 3.4px;
+  font-size: 0.85em;
+  margin-right: 10.8em;
+}
+
+.price .two{
+  font-size: 0.85em;
+  color:#7D7A78;
+  text-decoration-line: line-through;
+}
+
+.price .three{
+  font-weight: bold;
+  font-size: 1em;
+  margin-right: 7.9em;
+}
+
+
+.price .four{
+  font-weight: bold;
+  font-size: 1em;
+  margin-right: 7.9em;
+  color: red;
+}
+
+.link-opacity-50-hover:hover{
+  background-color: black;
+  color: #fff;
+}
+
+.boton-overlay {
+  position: absolute;
+  top: 77%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: antiquewhite;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0; /* Inicialmente oculto */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.img-containt:hover .boton-overlay {
+  opacity: 1;
+}
+
+.img-containt{
+  position: relative;
+  display: inline-block;
+}
+
+
+/*Historial*/
+
+.shop_info{
+  display: flex;
+  margin-bottom: -1.86em;
+}
+
+.shop_info .one{
+  margin-left: 2em;
+  
+}
+
+.shop_info .two{
+  margin-left: 38.5em;
+}
+
+.shop_content{
+  display: flex;
+}
+
+.shop_content .description{
+  display: block;
+  margin-left: 150px;
+  margin-top: 1em;
+}
+
+
+.shop_content img{
+  margin-left: 37px;
+}
+
+.description .two{
+  margin-top: -0.7em;
+  color: darkgrey;
+}
+
+.shop_content .three{
+  margin-left: 13.5em;
+  margin-top: 1em;
+}
+
+.shop_content .four{
+  margin-left: 13.5em;
+  width: 10em;
+  height: 2.8em;
+  margin-top: 1.2em;
+  background-color: #39BDB9;
+  border-color:  #051A53;
+}
+
+.search{
+  display: flex;
+  max-height: 70px;
+}
+
+.search i{
+  margin-right: 7.5px;
+}
+.search button{
+  margin-left: 20px;
+  display: flex;
+  max-height: 70px;
+  max-width: 150px;
+  border-radius: 0;
+}

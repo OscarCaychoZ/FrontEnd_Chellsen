@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+    <script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.118.2">
+    <title>Tienda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="estilos.css" rel="stylesheet">
+    <style>
+        .Oculto{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <nav class="py-2 border-bottom custom-navbar navbar-text " style="background-color:#EEE0D4;">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center">
+            <div class="navbar-text">
+                <label for="contacto" class="m-0 shake-text">&nbsp; ENVÍOS GRATIS POR COMPRAS DESDE S/99!</label>
+            </div>
+            <ul class="nav">
+                <li class="nav-item"><a data-bs-toggle="modal" data-bs-whatever="@getbootstrap" data-bs-target="#exampleModal" class="nav-link link-body-emphasis2 px-2">Login &nbsp;<i
+                    class="bi bi-person-fill"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <div>
+            <span class="material-symbols-outlined">
+                person_check
+                </span>
+            </div>
+            <div>
+                <h1 class="modal-title fs-5" id="exampleModalLabel"> Mi Cuenta</h1>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form method="post">
+                <div class="mb-3 row">
+                    <i class="bi bi-person col-sm-2 col-form-label user"></i>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="recipient-name" placeholder="user@gmail.com">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <span class="material-symbols-outlined col-sm-2 col-form-label lock">lock</span>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="recipient-name" placeholder="password">
+                    </div>
+                </div>
+                <div> 
+                    <a id="No_pass" href="#"><span class="material-symbols-outlined">sync_lock</span>Olvidaste tu contraseña</a>
+                </div>
+                <br>
+                <div class="d-grid col-8 mx-auto">
+                    <button class="btn btn-primary" type="submit">INICIAR SESION</button>
+                </div>
+                <br>
+                <span id="get_into">O Ingresar con</span>
+                <br>
+                <br>
+                <div class="social_media">
+                    <a><img src="icons/google_icon-icons.com_62736.png" alt="icon-chrome" class="icon_Chrome"> Google</a>
+                    <a><img src="icons/facebook_logo_icon_147291.png" alt="icon-chrome" class="icon_FB"> Facebook</a>
+                </div>
+            </form>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <header class="py-3 mb-4 bg-body-tertiary border-bottom ">
+        <div class="container d-flex flex-wrap justify-content-center principal">
+            <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
+                <svg class="bi me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap" />
+                </svg>
+                <span class="fs-4" href="index.html"><img src="Img/Logo.png" height="85px" width="155px" style="background-color: black;"/></span>
+            </a>
+            <ul class="nav me-auto">
+               
+                <li class="nav-item">
+                    <a href="Mujer.html" class="nav-link link-body-emphasis px-2 active">
+                        Mujer
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="Hombres.html" class="nav-link link-body-emphasis px-2">
+                        Hombres
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="Ninios.html" class="nav-link link-body-emphasis px-2">
+                        Niños
+                    </a>
+                </li>
+               
+                <li class="nav-item">
+                    <a href="Ofert.html" class="nav-link link-body-emphasis px-2">
+                         Shopping days<span class="sale-text">SALE</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                <li>
+                    <a href="#" class="nav-link text-secondary" id="openModalCarrito">
+                        <i class="bi bi-cart4"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="Historial.html" class="nav-link text-secondary">
+                        <i class="bi bi-truck"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+      <!-- Modal -->
+<div class="modal fade" id="ModalCarrito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Mis Productos Seleccionados</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Contenido del modal -->
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Producto</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="Img/modelo 1.jpg" width="30" height="24">
+                            </td>
+                            <td>1</td>
+                            <td>20.00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="Img/modelo 10.jpg" width="30" height="24">
+                            </td>
+                            <td>2</td>
+                            <td>16.00</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>TOTAL: S/. 36.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <a href="mis_compras.html" type="button" class="btn btn-primary">
+                  Realizar Pago
+                </a>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+  <!-- JavaScript para activar el modal -->
+  <script>
+    document.getElementById('openModalCarrito').addEventListener('click', function () {
+        var myModal = new bootstrap.Modal(document.getElementById('ModalCarrito'));
+        myModal.show();
+    });
+  </script>
+    <section class=titleOfert>
+        <h4>MUJER</h4>
+    </section>
+
+    <section class="content">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="Card_item">
+                    <div class="img-containt">
+                        <img src="https://d1flfk77wl2xk4.cloudfront.net/Assets/52/126/XXL_p0161112652.jpg" class="bd-placeholder-img img-thumbnail" alt="Slide Image" width="100%" height="100%">
+                        <button class="boton-overlay">Ver detalles</button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Marca A</h5>
+                        <p class="card-text">Pantalón Mujer Elegante</p>
+                        <div class="price">
+                            <p class="one">Precio</p>
+                            <p class="one">S/89.90</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="Card_item">
+                    <div class="img-containt">
+                        <img src="https://d3fvqmu2193zmz.cloudfront.net/items_2/uid_commerces.1/uid_items_2.FDC24E4943Q9/1500x1500/64DFA664BABA5-Vestido-Casual-Mujer-Nina.jpg" class="bd-placeholder-img img-thumbnail" alt="Slide Image" width="100%" height="100%">
+                        <button class="boton-overlay">Ver detalles</button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Marca B</h5>
+                        <p class="card-text">Vestido Mujer Casual</p>
+                        <div class="price">
+                            <p class="one">Precio</p>
+                            <p class="one">S/79.90</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="Card_item">
+                    <div class="img-containt">
+                        <img src="https://d3fvqmu2193zmz.cloudfront.net/items_2/uid_commerces.1/uid_items_2.FDBS4JBR9LWO/1500x1500/647920BCE31C2-Blusa-Mujer.jpg" class="bd-placeholder-img img-thumbnail" alt="Slide Image" width="100%" height="100%">
+                        <button class="boton-overlay">Ver detalles</button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Marca C</h5>
+                        <p class="card-text">Blusa Mujer Floral</p>
+                        <div class="price">
+                            <p class="one">Precio</p>
+                            <p class="one">S/99.90</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="Card_item">
+                    <div class="img-containt">
+                        <img src="https://oechsle.vteximg.com.br/arquivos/ids/15413667-1500-1500/image-9c36e15598ef46089c844e169d422f3b.jpg?v=638284279878670000" class="bd-placeholder-img img-thumbnail" alt="Slide Image" width="100%" height="100%">
+                        <button class="boton-overlay">Ver detalles</button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Marca D</h5>
+                        <p class="card-text">Chaqueta Mujer de Moda</p>
+                        <div class="price">
+                            <p class="one">Precio</p>
+                            <p class="one">S/129.90</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <section class="content Oculto"  id="elementoOculto">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+              <div class="Card_item">
+                <div class="img-containt">
+                    <button type="button" class="sale">-50%</button>
+                    <img src="https://media.gq.com.mx/photos/63f53660937b5d59a717b034/4:3/w_1999,h_1499,c_limit/ropa-barata-de-hombre-en-tendencia-febrero-2023.jpg" class="bd-placeholder-img img-thumbnail" alt="Slide Image" width="100%" height="100%">
+                    <button class="boton-overlay">Ver detalles</button>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">New York Woman</h5>
+                  <p class="card-text">Pantalon Mujer Vivi Negro</p>
+                    <div class="price">
+                        <p class="one">Antes</p>
+                        <p class="two">S/69.90</p>
+                    </div>
+
+                    <div class="price">
+                        <p class="three">Online</p>       
+                        <p class="four">S/49.90</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="Card_item">
+                <div class="img-containt">
+                    <button type="button" class="sale">-50%</button>
+                    <img src="https://media.gq.com.mx/photos/63f53660937b5d59a717b034/4:3/w_1999,h_1499,c_limit/ropa-barata-de-hombre-en-tendencia-febrero-2023.jpg" class="bd-placeholder-img img-thumbnail" alt="Slide Image" width="100%" height="100%">
+                    <button class="boton-overlay">Ver detalles</button>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title" >New York Woman</h5>
+                    <p class="card-text">Pantalon Mujer Vivi Negro</p>
+                    <div class="price">
+                        <p class="one">Antes</p>
+                        <p class="two">S/69.90</p>
+                    </div>
+
+                    <div class="price">
+                        <p class="three">Online</p>       
+                        <p class="four">S/49.90</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                <div class="Card_item">
+                    <div class="img-containt">
+                        <button type="button" class="sale">-50%</button>
+                        <img src="https://media.gq.com.mx/photos/63f53660937b5d59a717b034/4:3/w_1999,h_1499,c_limit/ropa-barata-de-hombre-en-tendencia-febrero-2023.jpg" class="bd-placeholder-img img-thumbnail" alt="Slide Image" width="100%" height="100%">
+                        <button class="boton-overlay">Ver detalles</button>
+                    </div>
+                  <div class="card-body">
+                      <h5 class="card-title">New York Woman</h5>
+                      <p class="card-text">Pantalon Mujer Vivi Negro</p>
+                        <div class="price">
+                            <p class="one">Antes</p>
+                            <p class="two">S/69.90</p>
+                        </div>
+
+                        <div class="price">
+                            <p class="three">Online</p>       
+                            <p class="four">S/49.90</p>
+                        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="Card_item">
+                    <div class="img-containt">
+                        <button type="button" class="sale">-50%</button>
+                        <img src="https://media.gq.com.mx/photos/63f53660937b5d59a717b034/4:3/w_1999,h_1499,c_limit/ropa-barata-de-hombre-en-tendencia-febrero-2023.jpg" class="bd-placeholder-img img-thumbnail" alt="Slide Image" width="100%" height="100%">
+                        <button class="boton-overlay">Ver detalles</button>
+                </div>
+                  <div class="card-body">
+                      <h5 class="card-title">New York Woman</h5>
+                      <p class="card-text">Pantalon Mujer Vivi Negro</p>
+                        <div class="price">
+                            <p class="one">Antes</p>
+                            <p class="two">S/69.90</p>
+                        </div>
+
+                        <div class="price">
+                            <p class="three">Online</p>       
+                            <p class="four">S/49.90</p>
+                        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="Card_item">
+                    <div class="img-containt">
+                        <button type="button" class="sale">-50%</button>
+                        <img src="https://media.gq.com.mx/photos/63f53660937b5d59a717b034/4:3/w_1999,h_1499,c_limit/ropa-barata-de-hombre-en-tendencia-febrero-2023.jpg" class="bd-placeholder-img img-thumbnail" alt="Slide Image" width="100%" height="100%">
+                        <button class="boton-overlay">Ver detalles</button>
+                </div>
+                  <div class="card-body">
+                      <h5 class="card-title">New York Woman</h5>
+                      <p class="card-text">Pantalon Mujer Vivi Negro</p>
+                        <div class="price">
+                            <p class="one">Antes</p>
+                            <p class="two">S/69.90</p>
+                        </div>
+
+                        <div class="price">
+                            <p class="three">Online</p>       
+                            <p class="four">S/49.90</p>
+                        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="Card_item">
+                    <div class="img-containt">
+                        <button type="button" class="sale">-50%</button>
+                        <img src="https://media.gq.com.mx/photos/63f53660937b5d59a717b034/4:3/w_1999,h_1499,c_limit/ropa-barata-de-hombre-en-tendencia-febrero-2023.jpg" class="bd-placeholder-img img-thumbnail" alt="Slide Image" width="100%" height="100%">
+                        <button class="boton-overlay">Ver detalles</button>
+                </div>
+                  <div class="card-body">
+                      <h5 class="card-title">New York Woman</h5>
+                      <p class="card-text">Pantalon Mujer Vivi Negro</p>
+                        <div class="price">
+                            <p class="one">Antes</p>
+                            <p class="two">S/69.90</p>
+                        </div>
+
+                        <div class="price">
+                            <p class="three">Online</p>       
+                            <p class="four">S/49.90</p>
+                        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="Card_item">
+                    <div class="img-containt">
+                        <button type="button" class="sale">-50%</button>
+                        <img src="https://media.gq.com.mx/photos/63f53660937b5d59a717b034/4:3/w_1999,h_1499,c_limit/ropa-barata-de-hombre-en-tendencia-febrero-2023.jpg" class="bd-placeholder-img img-thumbnail" alt="Slide Image" width="100%" height="100%">
+                        <button class="boton-overlay">Ver detalles</button>
+                </div>
+                  <div class="card-body">
+                      <h5 class="card-title">New York Woman</h5>
+                      <p class="card-text">Pantalon Mujer Vivi Negro</p>
+                        <div class="price">
+                            <p class="one">Antes</p>
+                            <p class="two">S/69.90</p>
+                        </div>
+
+                        <div class="price">
+                            <p class="three">Online</p>       
+                            <p class="four">S/49.90</p>
+                        </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+    </section>
+
+
+</body>
+
+<script>
+    function mostrarElemento() {
+        var elementoOculto = document.getElementById("elementoOculto");
+
+        // Toggle: Si está oculto, lo muestra; si está visible, lo oculta
+        if (elementoOculto.style.display === "none") {
+            elementoOculto.style.display = "block";
+        } else {
+            elementoOculto.style.display = "none";
+        }
+    }
+</script>
+
+<br>
+
+<!--hr class="featurette-divider"-->
+<div class="container text-primary" style="background-color:rgb(212, 211, 211); color: blanchedalmond;">
+    <footer  class="py-2" >
+        <hr>
+        <br>
+        <div class="row">
+  
+            <div class="col-6 col-md-2 mb-3">
+                <h5>Información</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Libro de reclamaciones</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Términos y condicones</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cookies</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Privacidad de datos</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Ver mas</a></li>
+                </ul>
+            </div>
+  
+            <div class="col-6 col-md-2 mb-3">
+                <h5>Nosotros</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Inicio</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Nosotros</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Trabaja con nostros</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Ver mas</a></li>
+                
+                </ul>
+            </div>
+  
+            <div class="col-6  col-md-2  mb-3">
+                <h5>Libro de reclamaciones</h5>
+                <ul class="nav flex-column">
+                <a>
+                    <img src="https://bestbrands.com.pe/librodereclamaciones/wp-content/uploads/2022/02/i1.jpg" alt="Imagen" width="100" height="100">
+                </a>
+                </ul>
+            </div>
+  
+            <div class="col-6 col-md-2 mb-3">
+                <h5>Nuestra ubicación</h5>
+                <ul class="nav flex-column">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.2189987061856!2d-77.07061432577864!3d-11.9593339402773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105ce2f585e33e5%3A0x181a44df8a1e8942!2sUniversidad%20Privada%20del%20Norte!5e0!3m2!1ses-419!2spe!4v1696528523080!5m2!1ses-419!2spe"
+                    width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </ul>
+            </div>
+            
+        </div>
+  
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>&copy; 2023 Chellsen, todos los derechos reservados</p>
+            <ul class="list-unstyled d-flex">
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#twitter" />
+                        </svg></a></li>
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#instagram" />
+                        </svg></a></li>
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#facebook" />
+                        </svg></a></li>
+            </ul>
+        </div>
+    </footer>
+  </div>
+  
+  
